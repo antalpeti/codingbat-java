@@ -1,30 +1,32 @@
 package antalpeti.learn.codingbat_java.warmup1;
 
 import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
 import static org.junit.jupiter.api.Assertions.*;
 
+@SpringBootTest
 class MonkeyTroubleTest {
+    @Autowired
+    MonkeyTrouble monkeyTrouble;
+
     @Test
     void testBothSmile() {
-        MonkeyTrouble mt = new MonkeyTrouble();
-        assertTrue(mt.monkeyTrouble(true, true));
+        assertTrue(monkeyTrouble.monkeyTrouble(true, true));
     }
 
     @Test
     void testNeitherSmile() {
-        MonkeyTrouble mt = new MonkeyTrouble();
-        assertTrue(mt.monkeyTrouble(false, false));
+        assertTrue(monkeyTrouble.monkeyTrouble(false, false));
     }
 
     @Test
     void testFirstSmilesSecondNot() {
-        MonkeyTrouble mt = new MonkeyTrouble();
-        assertFalse(mt.monkeyTrouble(true, false));
+        assertFalse(monkeyTrouble.monkeyTrouble(true, false));
     }
 
     @Test
     void testFirstNotSmilingSecondIs() {
-        MonkeyTrouble mt = new MonkeyTrouble();
-        assertFalse(mt.monkeyTrouble(false, true));
+        assertFalse(monkeyTrouble.monkeyTrouble(false, true));
     }
 }
