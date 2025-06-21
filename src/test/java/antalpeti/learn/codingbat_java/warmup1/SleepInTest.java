@@ -30,4 +30,3 @@ class SleepInTest {
     assertTrue(si.sleepIn(true, true));
   }
 }
-
