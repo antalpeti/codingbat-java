@@ -71,3 +71,4 @@ class Diff21Test {
         assertEquals(58, diff21.diff21(50));
     }
 }
+

@@ -11,3 +11,4 @@ public class NotString {
     return "not " + str;
   }
 }
+

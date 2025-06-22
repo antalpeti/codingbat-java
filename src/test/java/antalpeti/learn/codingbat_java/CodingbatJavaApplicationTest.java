@@ -29,3 +29,4 @@ class CodingbatJavaApplicationTest {
       "ApplicationContext should contain the CodingbatJavaApplication bean");
   }
 }
+
