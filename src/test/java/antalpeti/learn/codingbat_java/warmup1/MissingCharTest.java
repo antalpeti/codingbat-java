@@ -58,4 +58,3 @@ class MissingCharTest {
     assertEquals("chocolat", missingChar.missingChar("chocolate", 8));
   }
 }
-

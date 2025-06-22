@@ -108,4 +108,3 @@ class PosNegTest {
     assertTrue(posNeg.posNeg(-5, -5, true));
   }
 }
-
