@@ -73,4 +73,3 @@ class Makes10Test {
     assertTrue(makes10.makes10(-2, 12));
   }
 }
-

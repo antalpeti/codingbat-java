@@ -33,4 +33,3 @@ class SleepInTest {
     assertTrue(sleepIn.sleepIn(true, true));
   }
 }
-

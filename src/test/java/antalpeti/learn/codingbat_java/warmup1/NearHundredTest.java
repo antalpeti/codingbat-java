@@ -108,4 +108,3 @@ class NearHundredTest {
     assertFalse(nearHundred.nearHundred(290));
   }
 }
-

@@ -10,4 +10,3 @@ public class CodingbatJavaApplication {
     SpringApplication.run(CodingbatJavaApplication.class, args);
   }
 }
-

@@ -43,4 +43,3 @@ class NotStringTest {
     assertEquals("not no", notString.notString("no"));
   }
 }
-
