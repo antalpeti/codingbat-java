@@ -9,6 +9,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
 class Makes10Test {
+
   @Autowired
   private Makes10 makes10;
 

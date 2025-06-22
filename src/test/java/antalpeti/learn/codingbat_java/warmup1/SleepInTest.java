@@ -9,27 +9,28 @@ import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
 class SleepInTest {
-    @Autowired
-    SleepIn sleepIn;
 
-    @Test
-    void testSleepIn_whenNotWeekdayAndNotVacation() {
-        assertTrue(sleepIn.sleepIn(false, false));
-    }
+  @Autowired
+  SleepIn sleepIn;
 
-    @Test
-    void testSleepIn_whenWeekdayAndNotVacation() {
-        assertFalse(sleepIn.sleepIn(true, false));
-    }
+  @Test
+  void testSleepIn_whenNotWeekdayAndNotVacation() {
+    assertTrue(sleepIn.sleepIn(false, false));
+  }
 
-    @Test
-    void testSleepIn_whenNotWeekdayAndVacation() {
-        assertTrue(sleepIn.sleepIn(false, true));
-    }
+  @Test
+  void testSleepIn_whenWeekdayAndNotVacation() {
+    assertFalse(sleepIn.sleepIn(true, false));
+  }
 
-    @Test
-    void testSleepIn_whenWeekdayAndVacation() {
-        assertTrue(sleepIn.sleepIn(true, true));
-    }
+  @Test
+  void testSleepIn_whenNotWeekdayAndVacation() {
+    assertTrue(sleepIn.sleepIn(false, true));
+  }
+
+  @Test
+  void testSleepIn_whenWeekdayAndVacation() {
+    assertTrue(sleepIn.sleepIn(true, true));
+  }
 }
 

@@ -9,27 +9,28 @@ import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
 class MonkeyTroubleTest {
-    @Autowired
-    MonkeyTrouble monkeyTrouble;
 
-    @Test
-    void testMonkeyTrouble_whenBothSmile() {
-        assertTrue(monkeyTrouble.monkeyTrouble(true, true));
-    }
+  @Autowired
+  MonkeyTrouble monkeyTrouble;
 
-    @Test
-    void testMonkeyTrouble_whenNeitherSmiles() {
-        assertTrue(monkeyTrouble.monkeyTrouble(false, false));
-    }
+  @Test
+  void testMonkeyTrouble_whenBothSmile() {
+    assertTrue(monkeyTrouble.monkeyTrouble(true, true));
+  }
 
-    @Test
-    void testMonkeyTrouble_whenFirstSmilesSecondDoesNot() {
-        assertFalse(monkeyTrouble.monkeyTrouble(true, false));
-    }
+  @Test
+  void testMonkeyTrouble_whenNeitherSmiles() {
+    assertTrue(monkeyTrouble.monkeyTrouble(false, false));
+  }
 
-    @Test
-    void testMonkeyTrouble_whenFirstDoesNotSmileSecondDoes() {
-        assertFalse(monkeyTrouble.monkeyTrouble(false, true));
-    }
+  @Test
+  void testMonkeyTrouble_whenFirstSmilesSecondDoesNot() {
+    assertFalse(monkeyTrouble.monkeyTrouble(true, false));
+  }
+
+  @Test
+  void testMonkeyTrouble_whenFirstDoesNotSmileSecondDoes() {
+    assertFalse(monkeyTrouble.monkeyTrouble(false, true));
+  }
 }
 

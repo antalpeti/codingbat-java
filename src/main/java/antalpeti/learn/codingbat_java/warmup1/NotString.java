@@ -4,6 +4,7 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class NotString {
+
   public String notString(String str) {
     if (str.startsWith("not")) {
       return str;
