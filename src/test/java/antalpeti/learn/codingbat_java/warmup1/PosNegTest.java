@@ -31,4 +31,3 @@ class PosNegTest {
   @Test void testPosNeg_whenMinus56True() { assertFalse(posNeg.posNeg(-5, 6, true)); }
   @Test void testPosNeg_whenMinus5Minus5True() { assertTrue(posNeg.posNeg(-5, -5, true)); }
 }
-
