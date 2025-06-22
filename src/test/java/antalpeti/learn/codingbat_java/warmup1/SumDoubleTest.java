@@ -51,3 +51,4 @@ class SumDoubleTest {
         assertEquals(7, sumDouble.sumDouble(3, 4));
     }
 }
+

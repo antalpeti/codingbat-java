@@ -8,3 +8,4 @@ public class ParrotTrouble {
     return talking && (hour < 7 || hour > 20);
   }
 }
+

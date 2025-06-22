@@ -12,3 +12,4 @@ public class SumDouble {
     return sum;
   }
 }
+

@@ -8,3 +8,4 @@ public class SleepIn {
         return !weekday || vacation;
     }
 }
+

@@ -32,3 +32,4 @@ class MonkeyTroubleTest {
         assertFalse(monkeyTrouble.monkeyTrouble(false, true));
     }
 }
+

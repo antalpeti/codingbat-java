@@ -32,3 +32,4 @@ class NearHundredTest {
   @Test void testNearHundred_whenInputIs211() { assertFalse(nearHundred.nearHundred(211)); }
   @Test void testNearHundred_whenInputIs290() { assertFalse(nearHundred.nearHundred(290)); }
 }
+
