@@ -11,22 +11,22 @@ class MonkeyTroubleTest {
     MonkeyTrouble monkeyTrouble;
 
     @Test
-    void testBothSmile() {
+    void testMonkeyTrouble_whenBothSmile() {
         assertTrue(monkeyTrouble.monkeyTrouble(true, true));
     }
 
     @Test
-    void testNeitherSmile() {
+    void testMonkeyTrouble_whenNeitherSmiles() {
         assertTrue(monkeyTrouble.monkeyTrouble(false, false));
     }
 
     @Test
-    void testFirstSmilesSecondNot() {
+    void testMonkeyTrouble_whenFirstSmilesSecondDoesNot() {
         assertFalse(monkeyTrouble.monkeyTrouble(true, false));
     }
 
     @Test
-    void testFirstNotSmilingSecondIs() {
+    void testMonkeyTrouble_whenFirstDoesNotSmileSecondDoes() {
         assertFalse(monkeyTrouble.monkeyTrouble(false, true));
     }
 }

@@ -12,22 +12,22 @@ class SleepInTest {
     SleepIn sleepIn;
 
     @Test
-    void testSleepIn_notWeekday_notVacation() {
+    void testSleepIn_whenNotWeekdayAndNotVacation() {
         assertTrue(sleepIn.sleepIn(false, false));
     }
 
     @Test
-    void testSleepIn_weekday_notVacation() {
+    void testSleepIn_whenWeekdayAndNotVacation() {
         assertFalse(sleepIn.sleepIn(true, false));
     }
 
     @Test
-    void testSleepIn_notWeekday_vacation() {
+    void testSleepIn_whenNotWeekdayAndVacation() {
         assertTrue(sleepIn.sleepIn(false, true));
     }
 
     @Test
-    void testSleepIn_weekday_vacation() {
+    void testSleepIn_whenWeekdayAndVacation() {
         assertTrue(sleepIn.sleepIn(true, true));
     }
 }
