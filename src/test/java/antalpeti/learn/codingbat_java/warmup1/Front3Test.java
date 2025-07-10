@@ -3,11 +3,14 @@ package antalpeti.learn.codingbat_java.warmup1;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
 
-
+@SpringBootTest
 class Front3Test {
 
-  private final Front3 front3 = new Front3();
+  @Autowired
+  Front3 front3;
 
     @Test
     void testJava() {

@@ -1,5 +1,8 @@
 package antalpeti.learn.codingbat_java.warmup1;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class FrontBack {
   public String frontBack(String str) {
     if (str.length() <= 1) {

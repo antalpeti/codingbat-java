@@ -11,7 +11,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 class PosNegTest {
 
   @Autowired
-  private PosNeg posNeg;
+  PosNeg posNeg;
 
   @Test
   void testPosNeg_when1Minus1False() {

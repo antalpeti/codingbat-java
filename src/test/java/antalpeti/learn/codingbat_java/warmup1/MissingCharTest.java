@@ -3,10 +3,14 @@ package antalpeti.learn.codingbat_java.warmup1;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
 
+@SpringBootTest
 class MissingCharTest {
 
-  private final MissingChar missingChar = new MissingChar();
+  @Autowired
+  MissingChar missingChar;
 
   @Test
   void testMissingChar_kitten_1() {

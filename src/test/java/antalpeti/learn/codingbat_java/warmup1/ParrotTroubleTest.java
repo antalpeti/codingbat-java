@@ -11,7 +11,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 class ParrotTroubleTest {
 
   @Autowired
-  private ParrotTrouble parrotTrouble;
+  ParrotTrouble parrotTrouble;
 
   @Test
   void testTalkingAt6() {
