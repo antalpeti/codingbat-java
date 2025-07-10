@@ -11,7 +11,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 class NearHundredTest {
 
   @Autowired
-  private NearHundred nearHundred;
+  NearHundred nearHundred;
 
   @Test
   void testNearHundred_whenInputIs93() {

@@ -11,7 +11,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 class Makes10Test {
 
   @Autowired
-  private Makes10 makes10;
+  Makes10 makes10;
 
   @Test
   void testMakes10_whenFirstIsNineSecondIsTen() {
