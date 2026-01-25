@@ -23,3 +23,10 @@
 hs_err_pid*
 replay_pid*
 /target/
+
+# GitHub Copilot / IDE generated artifacts
+*.copilot.xml
+*copilot*.xml
+
+# Test reports (JUnit/Surefire)
+TEST-*.xml
